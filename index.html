@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DungeDesign</title>
+    <link rel="stylesheet" href="DungeDesign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="site-header"> 
+        <div class="header-top">  
+            <nav class="header-nav">
+                <!-- Ändrat till #projekt för att scrolla ner på samma sida -->
+                <a href="#projekt" class="header-btn">Projekt</a>
+                <!-- <a href="#om-mig" class="header-btn">Om mig</a> -->
+                <a href="kontakt.html" class="header-btn">Kontakt</a>
+            </nav>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="slide-fwd-center">Erik Dunge</h1>
+                <h2 class="ingress">Interaktionsdesigner</h2>
+                <img src="marathon.jpg" alt="Marathon bilden" class="marathonBilden">
+                <img src="graphicdesign.jpeg" alt="Design bilden" class="designBilden">
+                <div class="cirkel"></div>
+                <div class="cirkel1"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Lagt till id="projekt" och scroll-marginal för snygg scroll -->
+        <section id="projekt" class="projects">
+            <article class="project">
+                <a href="mobilguiden.html">
+                    <img src="mobilguiden.png" alt="MobilGuiden app" class="project-img">
+                    <div class="project-text">
+                        <h2>MOBILGUIDEN</h2>
+                        <p>Deltagande Design</p>
+                    </div>
+                </a>
+            </article>
+          
+            <article class="project">
+                <a href="sagobanken.html">
+                    <img src="sagobankenstart.png" alt="SagoBänken app" class="project-img">
+                    <div class="project-text">
+                        <h2>SAGOBÄNKEN</h2>
+                        <p>Case Scenario</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- <article class="project">
+                <a href="#">
+                    <img src="balticseawatch.png" alt="Baltic Sea app" class="project-img">
+                    <div class="project-text">
+                        <h2>SEAWATCH</h2>
+                        <p>Design Hackathon</p>
+                    </div>
+                </a>
+            </article> -->
+        </section>
+    </main>
+
+</body>
+</html>

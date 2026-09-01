@@ -1,0 +1,333 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#projekt {
+    scroll-margin-top: 40px; /* Anpassa utrymmet ovanför när man klickar på Projekt */
+}
+
+.site-header {
+    position: relative;
+    background-color: #f4f3f3;  
+    padding: 10px 0px 40px;
+    text-align: center;
+    perspective: 800px;
+    width: 100%;
+    
+    
+}
+
+.header-top {
+    display: flex;
+    align-items: center;       /* centrerar vertikalt */
+    justify-content: flex-start; /* logga till vänster, knappar till höger */
+    padding-top: 30px; /* 👈 flyttar ner knapparna */
+    padding-right: 90px; /* valfritt, lite luft från kanten */
+}
+
+.header-nav {
+    margin-left: auto; /* pushar knapparna åt höger */
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300; /* bold */
+    font-size: 16px;  /* ändra här för större/mindre rubrik */
+}
+  
+.header-nav a {
+    margin-left: 60px;        /* mellanrum mellan knappar */
+    text-decoration: none;
+    color: #426f74;
+    padding: 12px 24px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.477); /* 👈 NY */
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+  
+.header-nav a:hover {
+    background-color: #426f74;
+    color: #f4f3f3;
+    border-color: #426f74;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 70; /* bold */
+    font-size: 70px;  /* ändra här för större/mindre rubrik */
+    color: #426f74;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    font-size: 50px;  /* exempel på H2-storlek */
+    color: #000000;
+    text-align: center; 
+}
+
+.site-header h1 {
+    margin-top: 1px;
+    text-align: left;
+    
+}
+
+.ingress {
+    font-size: 1.6rem;
+    max-width: 700px;
+    text-align: left;
+    color: #426f74;
+}
+
+
+p {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 10;
+    font-size: 30px;  /* exempel på H2-storlek */
+    color: #6f6f6f;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    padding: 120px;
+    background-color: #f4f3f3;
+    align-items: center;
+}
+
+.project {
+    width: 900px;        /* samma bredd på alla */
+    min-height: 420px;    /* samma minsta höjd på alla */
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background-color: #ffffff;
+}
+
+  .project a {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 100px;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+    text-align: left;
+    height: 100%;
+}
+
+.project a p {
+    text-align: left; /* centrera texten */    
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.project a:focus {
+    /* outline: 2px solid black; */
+    outline-offset: 4px;
+}
+
+.project-img {
+    width: 500px;       /* fyller kortets bredd */
+    height: 300px;      /* behåller proportionerna */
+    border-radius: 5px; /* rundade hörn om du vill */
+    margin-bottom: 5px; /* luft mellan bild och text */
+    display: block;    /* tar bort inline-gap */
+    object-fit: contain; /* ser till att bilden fyller ytan snyggt */
+    margin-right: 1px;  
+}
+
+.project-text {
+    text-align: left;
+    padding: 0;
+    
+}
+
+.hero-content {
+    max-width: 120000px;
+    /* Vertikal placering i hero */
+    margin-top: 60px;  /* flyttar H1 ned från toppen, justera som du vill */
+    padding: 0 80px;   /* lite luft på sidorna */
+    box-sizing: border-box;
+}
+
+.hero-content1 {
+    max-width: 800px;
+    /* Vertikal placering i hero */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.marathonBilden {
+    width: 240px;
+    height: auto;
+    margin-right: 470px;
+    margin-top: 40px;
+}
+
+.designBilden {
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+    margin-top: 80px;
+
+}
+
+.cirkel {
+    width: 50px;
+    height: 50px;
+    background-color: #426f74;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: 885px;
+    left: 390px;
+  }
+
+  .cirkel1 {
+    width: 70px;
+    height: 70px;
+    background-color: #426f74;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: 350px;
+    left: 860px;
+  }
+
+.pensionarBilden {
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.rubrikMobilguiden {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 70; /* bold */
+    font-size: 70px;  /* ändra här för större/mindre rubrik */
+    color: #426f74;
+    text-align: center;
+}
+
+.rubrikSagobanken {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 70; /* bold */
+        font-size: 70px;  /* ändra här för större/mindre rubrik */
+        color: #426f74;
+        text-align: center;
+}
+
+.underrubrikMobilguiden {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    font-size: 20px;  /* exempel på H2-storlek */
+    color: #6f6f6f;
+    text-align: center; 
+}
+
+.underrubrikSagobanken {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    font-size: 20px;  /* exempel på H2-storlek */
+    color: #6f6f6f;
+    text-align: center; 
+}
+
+.vy1mbGuiden {
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.MG-projektinfo1 {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    padding: 100px 10%;
+
+}
+
+.MGvy1text {
+    max-width: 500px;
+}
+
+.MGvy1text p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+
+    color: #000000;
+}
+
+.kontakt-page {
+    background-color: #f4f3f3;
+    color: #f4f3f3;
+    font-family: Arial, sans-serif;
+}
+
+/* HELA SEKTIONEN */
+.contact-section {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+/* RUBRIK */
+.contact-section h1 {
+    font-size: 64px;
+
+    margin-bottom: 20px;
+}
+
+/* BESKRIVNING */
+.contact-section p {
+    font-size: 20px;
+
+    color: #000000;
+
+    line-height: 1.7;
+}
+
+/* KONTAKTINFO */
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+}
+
+ @keyframes slide-fwd-center{
+    0% {
+        transform:translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
