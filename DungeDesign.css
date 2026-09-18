@@ -291,7 +291,6 @@ p {
 
 .kontakt-page {
     background-color: #f4f3f3;
-    color: #f4f3f3;
     font-family: Arial, sans-serif;
 }
 
@@ -332,6 +331,19 @@ p {
 
 .contact-info p {
     margin: 15px 0;
+}
+
+.contact-link {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #426f74;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.contact-link:hover {
+    border-color: #426f74;
 }
 
 /* OM MIG */
@@ -430,7 +442,7 @@ p {
 /* Platshållartext som markerar var Erik behöver fylla i eget innehåll */
 .placeholder {
     color: #9a9a9a;
-    font-family: 'DM Serif Display', serif;
+    font-style: italic;
 }
 
 .min-roll-box {
